@@ -55,8 +55,6 @@ Ecolife is a web application designed to enhance wildlife tourism and streamline
 
 ## Contributing:
 
-Ecolife is an open-source project. Contributions are welcome! Feel free to submit pull requests or report issues.
+Ecolife is an open-source project. Contributions are welcome! Feel free to submit pull requests or report issues 😊🦁🌍.
 
 ----------------------------------------------------------------------------------------------------------------------------------
-
-Feel free to customize this README to match your project's specifics. Happy coding! 😊🦁🌍

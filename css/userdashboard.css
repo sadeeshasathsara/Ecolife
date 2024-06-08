@@ -1,0 +1,505 @@
+:root {
+   --primaryGreen: #008455;
+   --primaryBlack: #111111;
+   --seconderyCream: #f5dea8;
+   --lightGreen: #b5e48c;
+   --mainWhite: #ffffff;
+   --seconderyText: #2f3e46;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   transition: all 0.2s ease-in-out;
+}
+
+body {
+   color: var(--primaryBlack);
+   font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: var(--primaryGreen);
+}
+
+body::-webkit-scrollbar-track {
+   background-color: white;
+}
+
+#user-dashboard-container {
+   margin: 40px 20px 20px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#user-status {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+   width: 100%;
+}
+
+#user-profile {
+   background: rgb(2, 139, 90);
+   background: linear-gradient(
+      156deg,
+      rgba(2, 139, 90, 1) 0%,
+      rgba(18, 181, 122, 1) 50%,
+      rgba(0, 152, 98, 1) 100%
+   );
+   width: 100%;
+   max-width: 300px;
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin: 30px;
+   position: relative;
+}
+
+#account-settings {
+   position: absolute;
+   right: 13px;
+   top: 7px;
+}
+
+#account-settings:hover {
+   transform: scale(1.2);
+   cursor: pointer;
+}
+
+#account-settings:active {
+   transform: scale(1);
+}
+
+#profile-pic {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   width: 150px;
+   height: 150px;
+   border-radius: 100px;
+   overflow: hidden;
+   background-image: url("../src/avatar-icon-png-12.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+#profile-pic:hover {
+   background-color: #0000001d;
+   background-image: url("../src/cloud-arrow-up.svg");
+   background-repeat: no-repeat;
+   background-size: 50px 50px;
+   background-position: center;
+   transition: none;
+   cursor: pointer;
+}
+
+#user-name {
+   width: 200px;
+   height: 30px;
+   margin: 10px 10px 0px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--mainWhite);
+   font-weight: 600;
+}
+
+#user-email {
+   width: 200px;
+   height: 30px;
+   margin: 0px 10ox 10px 10px;
+   text-align: center;
+   color: var(--mainWhite);
+   font-size: 13px;
+}
+
+#button-set {
+   display: flex;
+}
+
+#logout,
+#delete-account {
+   padding: 10px;
+   width: 130px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   background-color: var(--primaryBlack);
+   color: var(--mainWhite);
+   font-weight: 500;
+}
+
+#delete-account {
+   margin-left: 15px;
+   margin-right: 5px;
+   background-color: rgb(199, 53, 53);
+   user-select: none;
+   cursor: pointer;
+   font-size: 14px;
+   text-align: center;
+}
+
+#delete-account:hover {
+   transform: scale(1.05);
+   font-weight: 500;
+}
+
+#delete-account:active {
+   transform: scale(1);
+}
+
+#logout {
+   margin-right: 15px;
+   margin-left: 5px;
+}
+
+#logout:hover {
+   transform: scale(1.05);
+   font-weight: 500;
+}
+
+#logout:active {
+   transform: scale(1);
+}
+
+#user-password {
+   background: rgb(2, 139, 90);
+   background: linear-gradient(
+      204deg,
+      rgba(2, 139, 90, 1) 0%,
+      rgba(18, 181, 122, 1) 50%,
+      rgba(0, 152, 98, 1) 100%
+   );
+   width: 100%;
+   max-width: 300px;
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin: 30px;
+}
+
+#user-password form {
+   width: 90%;
+}
+
+#user-password-header {
+   margin-bottom: 30px;
+   color: var(--mainWhite);
+   font-size: 18px;
+   font-weight: 600;
+}
+
+#confirm-new-password,
+#new-password,
+#current-password {
+   margin: 5px 0px 5px 0px;
+   padding: 5px;
+   border-radius: 5px;
+   border: none;
+   width: 100%;
+}
+
+#user-password input:focus {
+   outline: none;
+}
+
+#status-para {
+   margin-top: 30px;
+   color: rgba(255, 255, 255, 0.866);
+   font-size: 12px;
+   font-weight: 300;
+}
+
+#change-password-container {
+   display: flex;
+   justify-content: center;
+}
+
+#change-password {
+   margin-top: 20px;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   color: var(--mainWhite);
+   background-color: var(--primaryGreen);
+}
+
+#change-password:hover {
+   transform: scale(1.1);
+}
+
+#change-password:active {
+   transform: scale(1);
+}
+
+#user-trips-container {
+   margin: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0px;
+}
+
+#user-trips-text {
+   font-size: 18px;
+   font-weight: 600;
+}
+
+#user-trip-table-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#user-trip-table {
+   margin: 20px;
+   width: 100%;
+   max-width: 700px;
+   background: rgb(2, 139, 90);
+   background: linear-gradient(
+      204deg,
+      rgba(2, 139, 90, 1) 0%,
+      rgba(18, 181, 122, 1) 50%,
+      rgba(0, 152, 98, 1) 100%
+   );
+   border-radius: 10px;
+   padding: 5px;
+}
+
+#user-trip-table tr td {
+   background-color: var(--primaryGreen);
+   border-radius: 10px;
+   padding: 10px;
+   color: rgba(255, 255, 255, 0.855);
+   text-align: center;
+   font-size: 13px;
+}
+
+#account-settings-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   background-color: #00000096;
+   /* popup background height */
+   height: 100vh;
+   top: -50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.001);
+   transition: transform 0.4s, top 0.6s;
+   z-index: 98;
+}
+
+#account-settings-container form {
+   margin: 10px;
+   width: 100%;
+   max-width: 550px;
+   height: 300px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: rgb(2, 139, 90);
+   background: linear-gradient(
+      340deg,
+      rgba(2, 139, 90, 1) 0%,
+      rgba(18, 181, 122, 1) 50%,
+      rgba(0, 152, 98, 1) 100%
+   );
+   border-radius: 10px;
+   position: relative;
+}
+
+#account-settings-close-container {
+   width: 100%;
+   display: flex;
+}
+
+#account-settings-close {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-size: cover;
+   width: 25px;
+   height: 25px;
+   margin: 2px;
+   width: 100%;
+   width: auto;
+   float: right;
+   margin-right: -37px;
+   margin-top: 5px;
+}
+
+#account-settings-close:hover {
+   cursor: pointer;
+   fill: rgb(255, 0, 0);
+   transition: none;
+   transform: scale(1.1);
+}
+
+#account-settings-close:active {
+   transform: scale(1);
+}
+
+#account-settings-container form div {
+   width: 100%;
+   max-width: 400px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#account-settings-container form div input:focus {
+   outline: none;
+}
+
+#account-settings-container form div #profile-pic-input {
+   width: 168px;
+}
+
+/* ::-webkit-file-upload-button{
+    background-color: var(--mainWhite);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 100px;
+}
+
+::-webkit-file-upload-button:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+::-webkit-file-upload-button:active{
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+} */
+
+#account-settings-container form div label {
+   color: #efefef;
+   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#submit {
+   padding: 10px;
+   width: 100px;
+   border: none;
+   border-radius: 5px;
+}
+
+#submit:hover {
+   background-color: var(--primaryGreen);
+   border: 2px solid white;
+   color: white;
+   transform: scale(1.1);
+}
+
+#submit:active {
+   transform: scale(1);
+}
+
+#account-delete-dialog-box-container {
+   border: 1px solid black;
+   width: 100%;
+   height: 200vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   background-color: #ffffffad;
+   visibility: hidden;
+   z-index: 98;
+}
+
+#account-delete-dialog-box {
+   padding: 20px;
+   background-color: var(--seconderyText);
+   border-radius: 10px;
+}
+
+#account-delete-dialog-box p {
+   color: var(--mainWhite);
+}
+
+#account-delete-dialog-box form {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-top: 8px;
+}
+
+#account-delete-dialog-box form input,
+#no {
+   padding: 5px;
+   width: 100px;
+   border: none;
+   border-radius: 5px;
+}
+
+#no {
+   user-select: none;
+   cursor: pointer;
+}
+
+#yes:hover {
+   cursor: pointer;
+   transform: scale(1.05);
+   background-color: #ff0000;
+   color: var(--mainWhite);
+}
+
+#no:hover {
+   transform: scale(1.05);
+   background-color: #119000;
+   color: var(--mainWhite);
+}
+
+#yes:active {
+   transform: scale(1);
+}
+
+#yes:active {
+   transform: scale(1);
+}
+
+/* reservations */
+#reservation table {
+   padding: 30px;
+   border-radius: 10px;
+   background-color: #e3e4e7;
+   margin-top: 35px;
+   margin-bottom: 45px;
+   mask-type: 100px;
+}
+
+#reservation table td {
+   border: 1px solid #d1d1d1;
+   padding: 14px 20px;
+}
+
+#reservation table th td {
+   background-color: #222;
+   color: #fff;
+}
+#reservation table #status {
+   background: #008455;
+   color: #e3e4e7;
+}

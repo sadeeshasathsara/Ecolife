@@ -1,0 +1,85 @@
+:root {
+   --primaryGreen: #008455;
+   --primaryBlack: #111111;
+   --seconderyCream: #f5dea8;
+   --lightGreen: #b5e48c;
+   --mainWhite: #ffffff;
+   --seconderyText: #2f3e46;
+}
+
+/* trip hero */
+.trip-hero {
+   margin-top: 60px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../src/jungle.jpg);
+   background-size: cover;
+   background-position: bottom;
+   background-attachment: fixed;
+}
+
+.trip-hero h1 {
+   background-color: #fff;
+   padding: 15px 40px;
+   font-weight: 600;
+   border-radius: 4px;
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* text */
+.text {
+   text-align: center;
+   margin-top: 70px;
+}
+
+.text div {
+   width: 100%;
+}
+
+.text h3 {
+   font-size: 1.8em;
+   font-weight: 600;
+}
+
+.text p {
+   font-size: 18px;
+   line-height: 32px;
+   color: #505151;
+   font-weight: 300;
+}
+
+/* pkg-area */
+.pkg-area .title {
+   margin-bottom: 50px;
+}
+
+.pkg-area .inne-box {
+   text-align: center;
+   align-items: center;
+   padding: 0 30px;
+}
+
+.pkg-area .title h2 {
+   width: 60%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.pkg-area span {
+   background-color: var(--primaryGreen);
+   height: 1px;
+   width: 100%;
+}
+
+.marging-y {
+   margin: 100px 0;
+}
+
+.pkg-area p {
+   color: var(--seconderyText);
+   font-weight: 600;
+}
+
+.pkg-area h3 {
+   color: var(--primaryGreen);
+}

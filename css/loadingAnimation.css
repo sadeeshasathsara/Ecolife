@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(97, 148, 241);
+}
+
+.container, .circle-box {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.container{
+    flex-direction: column;
+}
+
+/* add style to circles */
+
+.circle{
+
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    animation: loading 0.8s ease infinite;
+}
+
+/* Add animation delay for each circle */
+
+#circle-one{
+    animation-delay: 0.3s;
+}
+
+#circle-two{
+    animation-delay: 0.4s;
+}
+
+#circle-three{
+    animation-delay: 0.5s;
+}
+
+#circle-four{
+    animation-delay: 0.6s;
+}
+
+
+/* Animation */
+
+@keyframes loading {
+    
+    0%{
+        width: 20px;
+        height: 20px;
+    }
+
+    50%{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+#creadit{
+    color: #c7c7c7;
+    margin-bottom: 35px;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+}

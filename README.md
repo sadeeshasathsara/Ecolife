@@ -1,6 +1,8 @@
 # Ecolife - Wild Life Trip Management System
 A web application for wildlife enthusiasts! Plan your wildlife adventures, explore species, and book guided tours. Built with HTML, CSS, JavaScript, PHP, and MySQL.
 
+![Screenshot 2024-06-08 214719](https://github.com/sadeeshasathsara/Ecolife/assets/81063100/5385e5e4-046c-4d63-99b8-59d95a842f41)
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 # Wild Life Trip Management System (Ecolife)
